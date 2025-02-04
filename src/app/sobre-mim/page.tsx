@@ -3,7 +3,7 @@ import Image from "../../components/Image";
 export default function Sobre() {
   return (
     <>
-      <div className="flex flex-col gap-4 ">
+      <div className="flex flex-col gap-6">
         <h1 className="font-family-secondary md:text-5xl text-4xl text-center">
           Sobre mim
         </h1>

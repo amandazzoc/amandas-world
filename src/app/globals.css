@@ -22,6 +22,10 @@
   .focus-outline {
     @apply focus-visible:outline focus-visible:outline-2 focus-visible:outline-[var(--secondary)];
   }
+
+  .habilidades-img{
+    @apply lg:w-auto md:w-24 w-16
+  }
 }
 
 
