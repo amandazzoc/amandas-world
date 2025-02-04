@@ -2,7 +2,13 @@ export default function Footer(){
     return (
       <>
         <div className="flex gap-12 justify-center items-center">
-          <a href="https://x.com/amandazzoc" target="_blank">
+          <a
+            href="https://x.com/amandazzoc"
+            target="_blank"
+            className="focus-outline block"
+            aria-label="Ir para o meu Twitter"
+            title="Ir para o meu Twitter"
+          >
             <svg
               width="20"
               height="20"
@@ -37,7 +43,13 @@ export default function Footer(){
               </defs>
             </svg>
           </a>
-          <a href="https://www.instagram.com/amandazzoc" target="_blank">
+          <a
+            href="https://www.instagram.com/amandazzoc"
+            target="_blank"
+            className="focus-outline block"
+            aria-label="Ir para o meu Instagram"
+            title="Ir para o meu Instagram"
+          >
             <svg
               width="24"
               height="24"
@@ -52,7 +64,13 @@ export default function Footer(){
               />
             </svg>
           </a>
-          <a href="https://github.com/amandazzoc" target="_blank">
+          <a
+            href="https://github.com/amandazzoc"
+            target="_blank"
+            className="focus-outline block"
+            aria-label="Ir para o meu Github"
+            title="Ir para o meu Github"
+          >
             <svg
               width="24"
               height="24"
@@ -67,7 +85,13 @@ export default function Footer(){
               />
             </svg>
           </a>
-          <a href="https://www.behance.net/amandaoliveira297" target="_blank">
+          <a
+            href="https://www.behance.net/amandaoliveira297"
+            target="_blank"
+            className="focus-outline block"
+            aria-label="Ir para o meu Behance"
+            title="Ir para o meu Behance"
+          >
             <svg
               width="24"
               height="24"
@@ -85,6 +109,9 @@ export default function Footer(){
           <a
             href="https://www.linkedin.com/in/amanda-oliveira-970410232/"
             target="_blank"
+            className="focus-outline block"
+            aria-label="Ir para o meu Linkedin"
+            title="Ir para o meu Linkedin"
           >
             <svg
               width="24"
