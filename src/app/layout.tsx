@@ -29,7 +29,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <main className="flex flex-col justify-between lg:py-[120px] lg:px-[360px] md:py-28 md:px-8 py-14 px-4">
+        <main className="flex flex-col justify-between lg:py-[90px] lg:px-[360px] md:py-28 md:px-8 py-14 px-4">
           <Navbar />
           {children}
           <Footer />
