@@ -1,4 +1,10 @@
-export default function Navbar(){
+'use client'
+interface NavbarProps{
+  menuOpen: boolean;
+  setMenuOpen: (open: boolean) => void
+}
+
+export default function Navbar({menuOpen, setMenuOpen}: NavbarProps){
     return (
       <>
         <div className="flex justify-between">
@@ -22,9 +28,12 @@ export default function Navbar(){
               alt="Icone para alterar para light mode"
             />
             <img
-              className="md:w-auto w-12 rotate-90"
+              className={`md:w-auto w-12 transition-transform duration-300 ${
+                menuOpen ? "rotate-0" : "rotate-90"
+              }`}
               src="/img/menu.svg"
               alt="Icone para acessar o menu de opções"
+              onClick={() => setMenuOpen(!menuOpen)}
             />
           </div>
         </div>

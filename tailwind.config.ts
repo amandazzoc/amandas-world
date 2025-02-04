@@ -15,4 +15,7 @@ export default {
     },
   },
   plugins: [],
+  variants: {
+    width: ["responsive", "hover", "focus"],
+  },
 } satisfies Config;

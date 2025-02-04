@@ -27,7 +27,7 @@ export default function Home() {
                 alt="Icone de Setas"
                 className="w-[14px]"
               />
-              <p className="font-family-secondary md:text-2xl text-xl">
+              <p className="font-family-secondary md:text-2xl text-xl ">
                 Meus projetos
               </p>
             </div>
