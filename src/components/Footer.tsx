@@ -1,7 +1,7 @@
 export default function Footer(){
     return (
       <>
-        <div className="flex gap-12 justify-center items-center">
+        <div className="flex gap-12 justify-center items-center md:pt-12 pt-8 lg:pb-[10vh] lg:px-[18.5vw] md:pb-28 md:px-8 pb-14 px-4">
           <a
             href="https://x.com/amandazzoc"
             target="_blank"

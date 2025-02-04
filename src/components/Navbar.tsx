@@ -7,7 +7,7 @@ interface NavbarProps{
 export default function Navbar({menuOpen, setMenuOpen}: NavbarProps){
     return (
       <>
-        <div className="flex justify-between">
+        <nav className="flex justify-between md:pb-10 pb-6 fixed-top lg:pt-[10vh] lg:px-[18.5vw] md:pt-28 md:px-8 pt-14 px-4">
           <div className="flex items-center gap-2">
             <img
               className="md:w-12 w-11"
@@ -36,7 +36,7 @@ export default function Navbar({menuOpen, setMenuOpen}: NavbarProps){
               onClick={() => setMenuOpen(!menuOpen)}
             />
           </div>
-        </div>
+        </nav>
       </>
     );
 }

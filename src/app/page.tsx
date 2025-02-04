@@ -13,6 +13,7 @@ export default function Home() {
             Crio interfaces intuitivas, designs criativos & modernos e
             experiências que fazem a diferença!
           </p>
+          
         </section>
         <div className="flex gap-16 justify-center">
           <a
@@ -33,7 +34,7 @@ export default function Home() {
             </div>
           </a>
           <a
-            href=""
+            href="/sobre-mim"
             aria-label="Sobre mim"
             title="Sobre mim"
             className="block focus-outline"
