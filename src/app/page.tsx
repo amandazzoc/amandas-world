@@ -13,11 +13,10 @@ export default function Home() {
             Crio interfaces intuitivas, designs criativos & modernos e
             experiências que fazem a diferença!
           </p>
-          
         </section>
         <div className="flex gap-16 justify-center">
           <a
-            href=""
+            href="/projetos"
             aria-label="Ver meus projetos"
             title="Ver meus projetos"
             className="block focus-outline"

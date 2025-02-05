@@ -27,14 +27,14 @@ export default function RootLayout({
   const pathname = usePathname()
   const [menuOpen, setMenuOpen] = useState(false)
 
-  const isCentered = pathname === "/" || menuOpen
+  const isCentered = pathname === "/" 
 
   return (
     <html lang="pt-BR">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col h-screen overflow-hidden`}>
         <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
         
-        <main className={`flex overflow-y-auto lg:px-[18.5vw] md:px-8 px-4  ${isCentered ? "items-center justify-center" : ""}`}>
+        <main className={`overflow-y-auto lg:px-[18.5vw] md:px-8 px-4  ${isCentered ? "flex items-center justify-center" : ""}`}>
           <AnimatePresence mode="wait">
             <motion.div
               key={menuOpen ? "menu" : pathname}
