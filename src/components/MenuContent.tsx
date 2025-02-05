@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import ItemMenu from "./ItemMenu";
+import { itemMenu } from "@/data/itemMenu";
 
 export default function MenuContent() {
   return (
@@ -12,11 +13,9 @@ export default function MenuContent() {
     >
       <div className="flex justify-center lg:mt-14 md:mt-20 mt-24">
         <ul className="flex flex-col gap-8 text-start">
-          <ItemMenu number="01" text="HOME" link="/" sessao="Home"/>
-          <ItemMenu number="02" text="SOBRE MIM" link="/sobre-mim" sessao="Sobre mim"/>
-          <ItemMenu number="03" text="HABILIDADES" link="/habilidades" sessao="Habilidades"/>
-          <ItemMenu number="04" text="EXPERIÊNCIAS" link="/experiencias" sessao="Experiências"/>
-          <ItemMenu number="05" text="PROJETOS" link="/projetos" sessao="Projetos"/>
+          {itemMenu.map((item, index) => (
+            <ItemMenu key={index} number={item.number} text={item.text} link={item.link} sessao={item.sessao} />
+          ))}
         </ul>
       </div>
     </motion.div>
