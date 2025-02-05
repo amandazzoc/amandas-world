@@ -10,7 +10,7 @@ export default function MenuContent() {
       transition={{ duration: 0.4, ease: "easeInOut" }}
       className="text-center"
     >
-      <div className="flex justify-center lg:mt-14 md:mt-20 mt-32">
+      <div className="flex justify-center lg:mt-14 md:mt-20 mt-24">
         <ul className="flex flex-col gap-8 text-start">
           <ItemMenu number="01" text="HOME" link="/" sessao="Home"/>
           <ItemMenu number="02" text="SOBRE MIM" link="/sobre-mim" sessao="Sobre mim"/>
