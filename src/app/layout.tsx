@@ -9,6 +9,7 @@ import { usePathname } from "next/navigation";
 import { AnimatePresence, motion } from "framer-motion";
 import MenuContent from "@/components/MenuContent";
 import Head from "next/head";
+import { Analytics } from "@vercel/analytics/react";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -57,6 +58,7 @@ export default function RootLayout({
               transition={{ duration: 0.4, ease: "easeInOut" }}
             >
               {menuOpen ? <MenuContent /> : children}
+              <Analytics/>
             </motion.div>
           </AnimatePresence>
         </main>
