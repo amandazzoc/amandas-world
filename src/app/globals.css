@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Bacasime+Antique&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Bacasime+Antique&display=swap');
 
-:root {
+:root,
+[data-theme="light"] {
   --background: #FAFBF5;
   --font-card: #FAFBF5;
   --foreground: #373A3C;
@@ -11,8 +12,7 @@
   --swiper-pagination-color: #44D62C;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
+[data-theme="dark"] {
     --background: #373A3C;
     --foreground: #FAFBF5;
     --font-card: #FAFBF5;
@@ -20,7 +20,7 @@
     --secondary-foreground: #2f9e1e;
     --swiper-navigation-color: #44D62C;
     --swiper-pagination-color: #44D62C;
-  }
+  
 }
 
 

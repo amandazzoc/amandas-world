@@ -8,6 +8,7 @@ import { useState } from "react";
 import { usePathname } from "next/navigation";
 import { AnimatePresence, motion } from "framer-motion";
 import MenuContent from "@/components/MenuContent";
+import Head from "next/head";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,11 +31,23 @@ export default function RootLayout({
   const isCentered = pathname === "/" 
 
   return (
-    <html lang="pt-BR">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col h-screen overflow-hidden`}>
+    <html lang="pt-BR" data-theme="light">
+      <Head>
+        <title>Amanda's World</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charSet="UTF-8" />
+        <meta name="description" content="Descrição do meu site" />
+      </Head>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col h-screen overflow-hidden`}
+      >
         <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-        
-        <main className={`overflow-y-auto lg:px-[18.5vw] md:px-8 px-4  ${isCentered ? "flex items-center justify-center" : ""}`}>
+
+        <main
+          className={`overflow-y-auto lg:px-[18.5vw] md:px-8 px-4  ${
+            isCentered ? "flex items-center justify-center" : ""
+          }`}
+        >
           <AnimatePresence mode="wait">
             <motion.div
               key={menuOpen ? "menu" : pathname}
@@ -47,7 +60,7 @@ export default function RootLayout({
             </motion.div>
           </AnimatePresence>
         </main>
-        
+
         <Footer />
       </body>
     </html>

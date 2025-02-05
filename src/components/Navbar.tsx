@@ -1,4 +1,7 @@
 'use client'
+
+import ThemeToggle from "./ThemeToggle";
+
 interface NavbarProps{
   menuOpen: boolean;
   setMenuOpen: (open: boolean) => void
@@ -22,11 +25,7 @@ export default function Navbar({menuOpen, setMenuOpen}: NavbarProps){
             />
           </div>
           <div className="flex items-center md:gap-6 gap-3">
-            <img
-              className="md:w-auto w-12"
-              src="/img/dark.svg"
-              alt="Icone para alterar para light mode"
-            />
+            <ThemeToggle/>
             <img
               className={`md:w-auto w-12 transition-transform duration-300 ${
                 menuOpen ? "rotate-0" : "rotate-90"
