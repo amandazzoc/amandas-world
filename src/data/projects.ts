@@ -42,7 +42,7 @@ export const projects = [
       {
         img: "/img/projetos/back2.png",
         descricao:
-          "Sistema de Processamento de Notas Fiscais Eletrônicas com LLM.",
+          "Processamento de Notas Fiscais Eletrônicas com LLM.",
         mais: "Ver código fonte",
         link: "https://github.com/amandazzoc/Processamento-notas-fiscais-llm",
       },
@@ -55,7 +55,7 @@ export const projects = [
       {
         img: "/img/projetos/back4.png",
         descricao:
-          "Automatização de cadastro de produtos em planilha com Python.",
+          "Automatização de cadastro de produtos em planilha.",
         mais: "Ver código fonte",
         link: "https://github.com/amandazzoc/Automacao-CadProdutos",
       },

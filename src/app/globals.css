@@ -5,17 +5,21 @@
 
 :root {
   --background: #FAFBF5;
+  --font-card: #FAFBF5;
   --foreground: #373A3C;
-  --secondary: #44D62C
-
+  --secondary: #44D62C;
+  --swiper-pagination-color: #44D62C;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #373A3C;
     --foreground: #FAFBF5;
+    --font-card: #FAFBF5;
     --secondary: #44D62C;
     --secondary-foreground: #2f9e1e;
+    --swiper-navigation-color: #44D62C;
+    --swiper-pagination-color: #44D62C;
   }
 }
 
