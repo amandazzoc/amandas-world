@@ -49,3 +49,16 @@ body {
 .font-family-secondary{
   font-family: "Bacasime Antique", serif;
 }
+
+@keyframes line-grow {
+  from {
+    height: 0;
+  }
+  to {
+    height: 100%;
+  }
+}
+
+.animate-line-grow {
+  animation: line-grow 2s ease-in-out forwards;
+}

@@ -15,7 +15,7 @@ export default function MenuContent() {
           <ItemMenu number="01" text="HOME" link="/" sessao="Home"/>
           <ItemMenu number="02" text="SOBRE MIM" link="/sobre-mim" sessao="Sobre mim"/>
           <ItemMenu number="03" text="HABILIDADES" link="/habilidades" sessao="Habilidades"/>
-          <ItemMenu number="04" text="EXPERIÊNCIAS" link="/experiencia" sessao="Experiências"/>
+          <ItemMenu number="04" text="EXPERIÊNCIAS" link="/experiencias" sessao="Experiências"/>
           <ItemMenu number="05" text="PROJETOS" link="#" sessao="Projetos"/>
         </ul>
       </div>
