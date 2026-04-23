@@ -69,3 +69,27 @@ body {
   animation: line-grow 2s ease-in-out forwards;
 }
 
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #4b5563 transparent; 
+}
+
+*::-webkit-scrollbar {
+  width: 8px; 
+  height: 8px; 
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #4b5563;
+  border-radius: 10px; 
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: var(--secondary); 
+}

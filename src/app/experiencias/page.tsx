@@ -1,6 +1,13 @@
 const experiences = [
   {
-    title: "Desenvolvedora Front-end JR",
+    title: "Desenvolvedora Web Front-end",
+    enterprise: "Contato Seguro & Compliance Station",
+    year: "2025 - 2026",
+    description:
+      "Desenvolvo e mantenho a arquitetura Front-end de uma plataforma SaaS utilizando React e TypeScript, focando em escalabilidade e componentização e refatorando códigos legados.",
+  },
+  {
+    title: "Desenvolvedora Front-end",
     enterprise: "Devnation",
     year: "2025",
     description:
@@ -31,68 +38,69 @@ const experiences = [
 
 export default function Experiencias() {
   return (
-    <>
-      <div className="flex flex-col gap-6">
-        <h1 className="font-family-secondary md:text-5xl text-4xl text-center">
-          Experiências
-        </h1>
-        <section className="md:flex gap-4 hidden">
-          <div className="flex flex-col w-[49%] lg:gap-28 gap-28">
-            {experiences.map((exp, index) => (
-              <div key={index} className="flex items-center justify-between ">
-                <div>
-                  <h1 className="lg:text-3xl text-2xl font-family-secondary">
-                    {exp.title}
-                  </h1>
-                  <p className="lg:text-xl text-lg text-[var(--secondary)] font-semibold">
-                    {exp.enterprise}
-                  </p>
-                </div>
-                <div>
-                  <p className="lg:text-4xl text-3xl font-family-secondary">
-                    {exp.year}
-                  </p>
-                </div>
+    <div className="flex flex-col gap-10">
+      <h1 className="font-family-secondary md:text-5xl text-4xl text-center">
+        Experiências
+      </h1>
+
+      <section className="relative hidden md:flex flex-col gap-16 py-4">
+        <div className="absolute left-1/2 top-0 bottom-0 w-1 bg-[var(--secondary)] -translate-x-1/2 rounded-full line">
+          <div className="absolute -bottom-1 left-1/2 w-2 h-2 bg-[var(--secondary)] -translate-x-1/2 rotate-45"></div>
+        </div>
+
+        {experiences.map((exp, index) => (
+          <div key={index} className="flex w-full items-start justify-between z-10">
+            <div className="w-[calc(50%-2rem)] flex justify-between items-start text-left">
+              <div>
+                <h1 className="lg:text-3xl text-2xl font-family-secondary">
+                  {exp.title}
+                </h1>
+                <p className="lg:text-xl text-lg text-[var(--secondary)] font-semibold">
+                  {exp.enterprise}
+                </p>
               </div>
-            ))}
-          </div>
-          <div className="relative w-1 bg-[var(--secondary)] rounded-full left-[-2px] line">
-            <div className="absolute bottom-0 left-[-2px] w-2 h-2 bg-[var(--secondary)] rotate-45"></div>
-          </div>
-          <div className="flex flex-col w-[49%] lg:gap-16 gap-12">
-            {experiences.map((exp, index) => (
-              <p key={index} className="lg:text-lg text-base">
+              <div className="pl-4">
+                <p className="lg:text-4xl text-3xl font-family-secondary">
+                  {exp.year}
+                </p>
+              </div>
+            </div>
+
+            <div className="w-[calc(50%-2rem)] text-left">
+              <p className="lg:text-lg text-base leading-relaxed text-gray-200">
                 {exp.description}
               </p>
-            ))}
+            </div>
           </div>
-        </section>
-        <section className="flex gap-4 md:hidden">
-          <div className="relative w-2 bg-[var(--secondary)] rounded-full  line">
-            <div className="absolute bottom-0 left-[-3px] w-2 h-2 bg-[var(--secondary)] rotate-45"></div>
-          </div>
-          <div className="flex flex-col gap-8">
-            {experiences.map((exp, index) => (
-              <div key={index}>
-                <div className="flex items-center justify-between ">
-                  <div>
-                    <h1 className="text-xl font-family-secondary">
-                      {exp.title}
-                    </h1>
-                    <p className="text-[var(--secondary)] font-semibold">
-                      {exp.enterprise}
-                    </p>
-                  </div>
-                  <div>
-                    <p className="text-2xl font-family-secondary">{exp.year}</p>
-                  </div>
-                </div>
-                <p>{exp.description}</p>
+        ))}
+      </section>
+
+      <section className="relative flex md:hidden flex-col gap-10 pl-6 py-2">
+        <div className="absolute left-0 top-0 bottom-0 w-1 bg-[var(--secondary)] rounded-full line">
+          <div className="absolute -bottom-1 left-1/2 w-2 h-2 bg-[var(--secondary)] -translate-x-1/2 rotate-45"></div>
+        </div>
+
+        {experiences.map((exp, index) => (
+          <div key={index} className="flex flex-col gap-3 z-10">
+            <div className="flex items-start justify-between gap-4">
+              <div>
+                <h1 className="text-xl font-family-secondary leading-tight">
+                  {exp.title}
+                </h1>
+                <p className="text-[var(--secondary)] font-semibold mt-1">
+                  {exp.enterprise}
+                </p>
               </div>
-            ))}
+              <div>
+                <p className="text-2xl font-family-secondary">{exp.year}</p>
+              </div>
+            </div>
+            <p className="text-base leading-relaxed text-gray-200">
+              {exp.description}
+            </p>
           </div>
-        </section>
-      </div>
-    </>
+        ))}
+      </section>
+    </div>
   );
 }

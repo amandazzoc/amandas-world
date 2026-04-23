@@ -4,6 +4,18 @@ export const projects = [
     title: "Front-end Development",
     cards: [
       {
+        img: "/img/projetos/front3.png",
+        descricao: "Header design original para a ASIMOV",
+        mais: "Ver deploy",
+        link: "https://asimov-eosin.vercel.app/",
+      },
+      {
+        img: "/img/projetos/front2.png",
+        descricao: "Landing page para a Positivus",
+        mais: "Ver deplot",
+        link: "https://positivus-khaki-two.vercel.app/",
+      },
+      {
         img: "/img/projetos/front1.png",
         descricao: "Sistema de gestão de loja de artesanato.",
         mais: "Ver deploy",
@@ -14,18 +26,6 @@ export const projects = [
         descricao: "Landing page do grupo Chyperwaves.",
         mais: "Ver deploy",
         link: "https://amandazzoc.github.io/CypherWave-LandingPage/",
-      },
-      {
-        img: "/img/projetos/front3.png",
-        descricao: "API e front para consultas de filmes do Harry Potter.",
-        mais: "Ver código fonte",
-        link: "https://github.com/amandazzoc/API-HarryPotter",
-      },
-      {
-        img: "/img/projetos/front2.png",
-        descricao: "Sistema de loja de perfumes Boticário.",
-        mais: "Ver código fonte",
-        link: "https://github.com/amandazzoc/sistemaloja_nodejs",
       },
     ],
   },
@@ -65,6 +65,12 @@ export const projects = [
     indice: "03",
     title: "UI/UX Design",
     cards: [
+      {
+        img: "/img/projetos/design7.png",
+        descricao: "Landing page para professora",
+        mais: "Ver projeto",
+        link: "https://www.behance.net/gallery/229203119/Landing-page-professora-Web-Design-Desenvolvimento",
+      },
       {
         img: "/img/projetos/uiux5.png",
         descricao: "Sistema Web e Identidade Visual do projeto uEye.",
